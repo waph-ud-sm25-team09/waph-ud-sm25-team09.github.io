@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* Ensure images are responsive and have rounded corners */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 9999px; /* Full rounded for headshots */
+        }
+        /* Card styling for team members */
+        .team-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            padding: 2.5rem; /* Ample padding */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        /* Link styling */
+        .homepage-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #3b82f6; /* Blue background */
+            color: #ffffff; /* White text */
+            border-radius: 0.75rem; /* Rounded corners */
+            text-decoration: none;
+            font-weight: 600; /* Semi-bold */
+            transition: background-color 0.3s ease-in-out;
+        }
+        .homepage-link:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-5xl font-extrabold text-center mb-12 text-gray-800">Meet Our Amazing Team</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <img src="https://freeimage.host/i/FNW6jLP" alt="Headshot of Team Member 1" class="w-36 h-36 object-cover mx-auto mb-6 border-4 border-blue-300">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Sai Sohan Gampa</h2>
+                <p class="text-lg text-gray-600 mb-4">
+                    Sai Sohan is a passionate web developer with expertise in front-end technologies and user experience design. He loves creating intuitive and beautiful interfaces.
+                </p>
+                <a href="https://saisohan8.github.io/" target="_blank" class="homepage-link">
+                    Project 1 Link
+                </a>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <img src="https://placehold.co/150x150/FCD34D/FFFFFF?text=Member+2" alt="Headshot of Team Member 2" class="w-36 h-36 object-cover mx-auto mb-6 border-4 border-yellow-300">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Bob Smith</h2>
+                <p class="text-lg text-gray-600 mb-4">
+                    Bob is a backend wizard, specializing in scalable architectures and database management. He ensures our applications run smoothly and efficiently.
+                </p>
+                <a href="https://www.example.com/bob-homepage" target="_blank" class="homepage-link">
+                    Bob's Homepage
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
 
